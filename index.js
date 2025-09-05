@@ -24,11 +24,11 @@ let notes = [
   },
 ];
 
-{
+
   app.get("/api/notes", (request, response) => {
     response.json(notes);
   });
-}
+
 
 //Get handler
 app.get("/api/notes/:id", (request, response) => {
